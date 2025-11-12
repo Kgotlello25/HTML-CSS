@@ -1,36 +1,77 @@
 <style>
     .back-to-amazon-button{
-        color: rgb(0, 113, 133)
+        color: rgb(0, 113, 133);
+        transition: color 0.15s;
+        cursor: pointer;
 
+    }
+    .back-to-amazon-button:hover{
+        color:rgba(202, 65, 11, 0.856);
     }
     
     .nike-black-running-shoes-button{
         color: black;
         font-size: 25px;
         font-weight: bold;
+        cursor: pointer;
     }
     .price-button{
         color:rgb(0, 118, 0);
         font-size: 20px;
         font-weight: bold;
+        cursor: pointer;
     }
     .add-to-cart-button{
         background-color: rgb(255, 216, 20);
         color: black;
         height: 30px;
-        width: 120px;
         border: none;
+        padding-top: 9px;
+        padding-left: 20px;
+        padding-bottom: 9px;
+        padding-right: 20px;
         border-radius: 15px;
-        font-size: 15px
+        border-radius: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.15s, opacity 0.20s;
+        vertical-align: top;
+       
+    }
+
+    .add-to-cart-button:hover{
+        background-color: rgba(218, 171, 18, 0.808);
+    }
+
+    .add-to-cart-button:active{
+        opacity: 0.5;
     }
     .buy-now-button{
         background-color: rgb(255, 164, 28);
         color: black;
         border: none;
-        height: 30px;
-        width: 120px;
+        padding-top: 9px;
+        padding-left: 20px;
+        padding-bottom: 4px;
+        padding-right: 20px;
         border-radius: 15px;
-        font-size: 15px
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.15s, opacity 0.20s;
+        vertical-align: top;
+
+    }
+
+    .buy-now-button:hover{
+        background-color: rgba(226, 143, 19, 0.918);
+    }
+
+    .buy-now-button:active{
+        opacity: 0.5;
+    }
+
+    .special-button{
+        font-size: 20px;
     }
 </style>
 
@@ -47,10 +88,15 @@
 $39 - in stock.
 </p>
 
+<p class="special-button">
+    Free delivery tomorrow.
+</p>
+
 <button class="add-to-cart-button">
     Add to Cart
 </button>
 
 <button class="buy-now-button">
     Buy now
+
 </button>
