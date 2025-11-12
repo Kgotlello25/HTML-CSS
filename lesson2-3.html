@@ -1,48 +1,73 @@
 <style>
-    .request-button{
+    .uber{
         background-color: black;
         color: white;
-        height: 38px;
-        width: 110px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right:10px;
+        padding-bottom: 10px;
         border: none;
         cursor: pointer;
         transition: opacity 0.15;
+        vertical-align: top;
         
     }
 
-    .request-button:hover{
+    .uber:hover{
         opacity: 0.8
     }
 
-    .add-to-cart-button{
+    .amazon{
         background-color: rgb(255, 216, 20);
         color: black;
-        height: 36px;
-        width: 180px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right:10px;
+        padding-bottom: 10px;
         border: none;
         border-radius: 50px;
         margin-left: 10px;
         margin-right: 10px;
+        vertical-align: top;
+        transition: background-color 0.15s;
+        cursor: pointer;
 
     }
-    .sign-up-button{
+
+    .amazon:hover{
+        background-color: rgba(218, 171, 18, 0.808);
+    }
+
+
+    .github{
         background-color: rgb(46, 164, 79);
         color: white;
-        height: 36px;
-        width: 110px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right:10px;
+        padding-bottom: 10px;
         border: none;
         border-radius: 10px;
+        vertical-align: top;
+        transition: box-shadow 0.15s;
+        cursor: pointer;
+
+        
     }
+    .github:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
 </style>
 
-<button class="request-button">
+<button class="uber">
     Request now
 </button>
 
-<button class="add-to-cart-button">
+<button class="amazon">
     Add to Cart
 </button>
 
-<button class="sign-up-button">
+<button class="github">
     Sign up
 </button>
